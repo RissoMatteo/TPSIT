@@ -1,0 +1,85 @@
+/* Generale */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #1e3c72, #2a5298, #1e1e1e);
+    color: #f4f4f4;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Contenitore */
+.controller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Titolo */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    letter-spacing: 2px;
+}
+
+/* Pulsanti */
+button {
+    font-size: 1.5rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Colori pulsanti */
+.blue {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.green {
+    background: linear-gradient(135deg, #28a745, #1f7a31);
+}
+
+.red {
+    background: linear-gradient(135deg, #dc3545, #a71d2d);
+}
+
+/* Hover effetto */
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Row layout */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Animazione di fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
